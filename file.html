@@ -17,16 +17,16 @@
         <h3>Low</h3>
        </div>
 
-       <div class = "wrap-flex">
-            <input 
+       <form id = "new-task-form">
+        <input 
+            type="text"  
             id = "new-task-input"
-            type="text"
-            placeholder = "put a task here">
-            <button 
-            id = "addToDo">+</button>
-            <div class="To-dos" 
-            id = "toDoContainer"></div>
-        </div>
+            placeholder = "put a task here" />
+        <input
+            type = "submit"
+            id="new-task-submit"
+            value="Add task" />
+        </form>
 
         <form id = "new-task-form">
             <input 
