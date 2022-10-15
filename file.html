@@ -10,18 +10,18 @@
 <body>
     <header> 
         <h1>To-do list</h1>
-       <div class = "wrap-flex">
+       <div class = "wrap-flex"> <!--titles of the lists-->
         <h3>Urgent</h3>    
         <h3>Important</h3>     
         <h3>Medium</h3>     
         <h3>Low</h3>
        </div>
-       <div class = "wrap-flex">
 
-       <form id = "new-task-form">
+       <div class = "wrap-flex">
+       <form id = "new-task-form1"> <!--textboxs and buttons-->
         <input 
             type="text"  
-            id = "new-task-input"
+            id = "new-task-input1"
             placeholder = "put a task here" />
         <input
             type = "submit"
@@ -29,10 +29,10 @@
             value="Add task" />
         </form>
 
-        <form id = "new-task-form">
+        <form id = "new-task-form2">
             <input 
                 type="text"  
-                id = "new-task-input"
+                id = "new-task-input2"
                 placeholder = "put a task here" />
             <input
                 type = "submit"
@@ -40,10 +40,10 @@
                 value="Add task" />
         </form>
 
-        <form id = "new-task-form">
+        <form id = "new-task-form3">
             <input 
                 type="text"  
-                id = "new-task-input"
+                id = "new-task-input3"
                 placeholder = "put a task here" />
             <input
                 type = "submit"
@@ -51,28 +51,44 @@
                 value="Add task" />
         </form>
 
-        <form id = "new-task-form">
+        <form id = "new-task-form4">
             <input 
                 type="text"  
-                id = "new-task-input"
+                id = "new-task-input4"
                 placeholder = "put a task here" />
             <input
                 type = "submit"
-                id="new-task-submit"
+                id="new-task-submit" 
                 value="Add task" />
-       </form>
-       
+       </form>         <!--end of code for textboxs & buttons -->
     </div>
     </header>
+   
+
     <main> 
-        <section class="task-list"> <!-- display here-->
-            <h2>Tasks</h2>
-            <div id="tasks">
-                
-            </div>
+        <div class="wrap-flex">
+        <section class="task-list1"> <!--display here for urgent list -->
+            <h3>Tasks</h3>
+            <div id="tasks1"></div>
         </section>
 
+        <section class="task-list2"> <!--display here for important list-->
+            <h3>Tasks</h3>
+            <div id="tasks2"></div>
+        </section>
+
+        <section class="task-list3"> <!--display here for Medium list-->
+            <h3>Tasks</h3>
+            <div id="tasks3"></div>
+        </section>
+
+        <section class="task-list4"> <!--display here for Low list-->
+            <h3>Tasks</h3>
+            <div id="tasks4"></div>
+        </section>    
+       </div>
+
     </main> 
-    <script src="file.js"></script> <!-- connect to js file-->
+    <script src="file.js"></script>  <!-- connect to js file -->
 </body>
 </html>
