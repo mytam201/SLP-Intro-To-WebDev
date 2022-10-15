@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+    //create variables
     const form = document.querySelector("#new-task-form");
     const input = document.querySelector('#new-task-input');
     const list_el = document.querySelector("#tasks");
@@ -8,6 +9,7 @@ window.addEventListener('load', () => {
 
         const task = input.value;
 
+        //need add input alert later
         const task_el = document.createElement("div");
         task_el.classList.add("task");
 
