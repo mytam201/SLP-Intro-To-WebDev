@@ -21,7 +21,12 @@ window.addEventListener('load', () => {
 
         const task1 = input1.value;
 
-        //need add input alert later (notification if there's no input from user)
+        // (notification if there's no input from user)
+        if (!task1){
+          alert("Please fill out your task!");
+          return;
+        }
+        
         const task_el1 = document.createElement("div");
         task_el1.classList.add("task");
 
@@ -63,7 +68,12 @@ window.addEventListener('load', () => {
 
         const task2 = input2.value;
 
-        //need add input alert later (notification if there's no input from user)
+        // (notification if there's no input from user)
+        if (!task2){
+          alert("Please fill out your task!");
+          return;
+        }
+
         const task_el2 = document.createElement("div");
         task_el2.classList.add("task");
 
@@ -105,7 +115,12 @@ window.addEventListener('load', () => {
 
         const task3 = input3.value;
 
-        //need add input alert later (notification if there's no input from user)
+        // (notification if there's no input from user)
+        if (!task3){
+          alert("Please fill out your task!");
+          return;
+        }
+
         const task_el3 = document.createElement("div");
         task_el3.classList.add("task");
 
@@ -147,7 +162,12 @@ window.addEventListener('load', () => {
 
         const task4 = input4.value;
 
-        //need add input alert later (notification if there's no input from user)
+        // (notification if there's no input from user)
+        if (!task4){
+          alert("Please fill out your task!");
+          return;
+        }
+
         const task_el4 = document.createElement("div");
         task_el4.classList.add("task");
 
