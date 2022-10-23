@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
 		});
     })
 
-    form4.addEventListener('submit', (e) => {
+    form2.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const task2 = input2.value;
