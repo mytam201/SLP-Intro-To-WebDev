@@ -78,9 +78,17 @@ window.addEventListener('load', () => {
 
         const task_content_el4 = document.createElement("div");
         task_content_el4.classList.add("content");
-        task_content_el4.innerText = task4;
+        
 
         task_el4.appendChild(task_content_el4);
+
+        const task_input_el4 = document.createElement("input");
+        task_input_el4.classList.add("text");
+        task_input_el4.type = "text";
+        task_input_el4.value = task;
+        task_input_el4.setAttribute("readonly", "readonly");
+
+        task_content_el4.appendChild(task_input_el4);
 
         const task_actions_el4 = document.createElement("div");
         task_actions_el4.classList.add("action");
