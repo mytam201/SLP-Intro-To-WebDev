@@ -91,7 +91,7 @@ window.addEventListener('load', () => {
         task_content_el4.appendChild(task_input_el4);
 
         const task_actions_el4 = document.createElement("div");
-        task_actions_el4.classList.add("action");
+        task_actions_el4.classList.add("actions");
 
         const task_delete_el4 = document.createElement("button");
         task_delete_el4.classList.add("delete");
@@ -99,13 +99,10 @@ window.addEventListener('load', () => {
 
         task_actions_el4.appendChild(task_delete_el4);
 
-        task_el4.appendChild(task_actions_el);
-        list_el4.appendChild(task_el);
-
-        input1.value = "";
-
-
+        task_el4.appendChild(task_actions_el4);
         list_el4.appendChild(task_el4);
+
+        input4.value = "";
     })
 
 
