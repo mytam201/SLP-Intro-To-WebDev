@@ -85,7 +85,7 @@ window.addEventListener('load', () => {
         const task_input_el4 = document.createElement("input");
         task_input_el4.classList.add("text");
         task_input_el4.type = "text";
-        task_input_el4.value = task;
+        task_input_el4.value = task4;
         task_input_el4.setAttribute("readonly", "readonly");
 
         task_content_el4.appendChild(task_input_el4);
@@ -103,6 +103,10 @@ window.addEventListener('load', () => {
         list_el4.appendChild(task_el4);
 
         input4.value = "";
+
+        task_delete_el4.addEventListener('click', (e) => {
+			list_el4.removeChild(task_el4);
+		});
     })
 
 
