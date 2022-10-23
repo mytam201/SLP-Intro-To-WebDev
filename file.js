@@ -3,12 +3,15 @@ window.addEventListener('load', () => {
     const form1 = document.querySelector("#new-task-form1");
     const input1 = document.querySelector('#new-task-input1');
     const list_el1 = document.querySelector("#tasks1");
+
     const form2 = document.querySelector("#new-task-form2");
     const input2 = document.querySelector('#new-task-input2');
     const list_el2 = document.querySelector("#tasks2");
+
     const form3 = document.querySelector("#new-task-form3");
     const input3 = document.querySelector('#new-task-input3');
     const list_el3 = document.querySelector("#tasks3");
+
     const form4 = document.querySelector("#new-task-form4");
     const input4 = document.querySelector('#new-task-input4');
     const list_el4 = document.querySelector("#tasks4");
@@ -78,6 +81,24 @@ window.addEventListener('load', () => {
         task_content_el4.innerText = task4;
 
         task_el4.appendChild(task_content_el4);
+
+        const task_actions_el4 = document.createElement("div");
+        task_actions_el4.classList.add("action");
+
+        const task_delete_el4 = document.createElement("button");
+        task_delete_el4.classList.add("delete");
+        task_delete_el4.innerHTML = "Delete";
+
+        task_actions_el4.appendChild(task_delete_el4);
+
+        task_el4.appendChild(task_actions_el);
+        list_el4.appendChild(task_el);
+
+        input1.value = "";
+
+
         list_el4.appendChild(task_el4);
     })
+
+
 })
