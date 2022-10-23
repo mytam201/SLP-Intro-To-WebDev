@@ -27,13 +27,38 @@ window.addEventListener('load', () => {
 
         const task_content_el1 = document.createElement("div");
         task_content_el1.classList.add("content");
-        task_content_el1.innerText = task1;
+        
 
         task_el1.appendChild(task_content_el1);
+
+        const task_input_el1 = document.createElement("input");
+        task_input_el1.classList.add("text");
+        task_input_el1.type = "text";
+        task_input_el1.value = task1;
+        task_input_el1.setAttribute("readonly", "readonly");
+
+        task_content_el1.appendChild(task_input_el1);
+
+        const task_actions_el1 = document.createElement("div");
+        task_actions_el1.classList.add("actions");
+
+        const task_delete_el1 = document.createElement("button");
+        task_delete_el1.classList.add("delete");
+        task_delete_el1.innerHTML = "Delete";
+
+        task_actions_el1.appendChild(task_delete_el1);
+
+        task_el1.appendChild(task_actions_el1);
         list_el1.appendChild(task_el1);
+
+        input4.value = "";
+
+        task_delete_el1.addEventListener('click', (e) => {
+			list_el1.removeChild(task_el1);
+		});
     })
 
-    form2.addEventListener('submit', (e) => {
+    form4.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const task2 = input2.value;
@@ -44,10 +69,35 @@ window.addEventListener('load', () => {
 
         const task_content_el2 = document.createElement("div");
         task_content_el2.classList.add("content");
-        task_content_el2.innerText = task2;
+        
 
         task_el2.appendChild(task_content_el2);
+
+        const task_input_el2 = document.createElement("input");
+        task_input_el2.classList.add("text");
+        task_input_el2.type = "text";
+        task_input_el2.value = task2;
+        task_input_el2.setAttribute("readonly", "readonly");
+
+        task_content_el2.appendChild(task_input_el2);
+
+        const task_actions_el2 = document.createElement("div");
+        task_actions_el2.classList.add("actions");
+
+        const task_delete_el2 = document.createElement("button");
+        task_delete_el2.classList.add("delete");
+        task_delete_el2.innerHTML = "Delete";
+
+        task_actions_el2.appendChild(task_delete_el2);
+
+        task_el2.appendChild(task_actions_el2);
         list_el2.appendChild(task_el2);
+
+        input2.value = "";
+
+        task_delete_el2.addEventListener('click', (e) => {
+			list_el2.removeChild(task_el2);
+		});
     })
 
     form3.addEventListener('submit', (e) => {
@@ -61,10 +111,35 @@ window.addEventListener('load', () => {
 
         const task_content_el3 = document.createElement("div");
         task_content_el3.classList.add("content");
-        task_content_el3.innerText = task3;
+        
 
         task_el3.appendChild(task_content_el3);
+
+        const task_input_el3 = document.createElement("input");
+        task_input_el3.classList.add("text");
+        task_input_el3.type = "text";
+        task_input_el3.value = task3;
+        task_input_el3.setAttribute("readonly", "readonly");
+
+        task_content_el3.appendChild(task_input_el3);
+
+        const task_actions_el3 = document.createElement("div");
+        task_actions_el3.classList.add("actions");
+
+        const task_delete_el3 = document.createElement("button");
+        task_delete_el3.classList.add("delete");
+        task_delete_el3.innerHTML = "Delete";
+
+        task_actions_el3.appendChild(task_delete_el3);
+
+        task_el3.appendChild(task_actions_el3);
         list_el3.appendChild(task_el3);
+
+        input3.value = "";
+
+        task_delete_el3.addEventListener('click', (e) => {
+			list_el3.removeChild(task_el3);
+		});
     })
 
     form4.addEventListener('submit', (e) => {
