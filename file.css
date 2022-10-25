@@ -9,3 +9,23 @@ html, body {
     /** border: 1px solid grey;**/
   }
 
+body{
+  background-color: #e9c684
+}
+
+.white{
+  color: rgb(255, 255, 255)
+}
+
+.brown{
+  color:rgb(110, 60, 21) 
+}
+
+#font{
+  font-style:oblique;
+}
+
+.image{
+  height: 15%;
+  width: 15%;
+}
