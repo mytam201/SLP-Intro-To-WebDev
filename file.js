@@ -21,6 +21,11 @@ window.addEventListener('load', () => {
 
         const task1 = input1.value;
 
+        //I added a notification for the urgent list
+        if(task1){
+          alert("Please complete your" + " "+ task1)
+        }
+
         // (notification if there's no input from user)
         if (!task1){
           alert("Please fill out your task!");
