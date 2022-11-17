@@ -5,8 +5,8 @@ Functionality and Features:
 
 - [x] Gives notification whenever the user forgets to input a task
 - [x] Gives notification for urgent tasks 
-- [x] textbox is used to collect user input
-- [x] submition button shows the inserted tasks
+- [x] Textbox is used to collect user input
+- [x] Submition button shows the inserted tasks
 - [x] Deletion button delets tasks
 - [x] Designed to have a colorful background
 - [x] Designed to have a picture
