@@ -1,4 +1,5 @@
 # SLP-Intro-To-WebDev
+# Collaborators: Tam, Ally, Youstina, Shavleen, Franco, Joanna.
 ### To-do list web application
 
 Functionality and Features:
